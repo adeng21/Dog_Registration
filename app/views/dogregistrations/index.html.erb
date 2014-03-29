@@ -1,0 +1,12 @@
+<h1> List of Registered Dog Owners</h1>
+
+<% if @registration.present? %>
+  <ul>
+    <% @registration.each do |owner| %>
+    <li>
+      <%= owner.full_name %>
+    </li>
+    <%end%>
+  </ul>
+<%end%>
+
